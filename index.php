@@ -102,7 +102,7 @@ $res = mysqli_query($con,"SELECT * FROM agenda");
 echo "<table border=3px><tr><td>Codigo do Evento</td><td>Nome do Evento</td><td>Data do Evento</td><td>Hora de Começo</td><td>Hora de Fim</td><td>Descrição do Evento</td><td>Localização</td><td>Organizador</td></tr>";
 
 while($escrever=mysqli_fetch_array($res)){
-    echo "</td><td>" . $escrever['Cod_event'] . "</td><td>d" . $escrever['nm_event'] . "</td><td>" . $escrever['dt_event'] . "</td><td>" . $escrever['hrcmc'] . "</td><td>" . $escrever['hrfim'] . "</td><td>" . $escrever['des_event'] . "</td><td>" . $escrever['loc_event'] . "</td><td>" . $escrever['responsavel'] . "</td></tr>"; 
+    echo "</td><td>" . $escrever['Cod_event'] . "</td><td>" . $escrever['nm_event'] . "</td><td>" . $escrever['dt_event'] . "</td><td>" . $escrever['hrcmc'] . "</td><td>" . $escrever['hrfim'] . "</td><td>" . $escrever['des_event'] . "</td><td>" . $escrever['loc_event'] . "</td><td>" . $escrever['responsavel'] . "</td></tr>"; 
     
     }
     echo "</table>"; 
